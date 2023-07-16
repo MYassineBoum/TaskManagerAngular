@@ -1,0 +1,25 @@
+<form #newTask="ngForm" (ngSubmit)="onSubmit(newTask)">
+    <div class="form-group">
+      <label for="task">Task</label>
+      <input type="text" class="form-control" id="task" required placeholder="Enter a new task" ngModel name="task">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Task</th>
+        <th scope="col">Reminder</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="content" *ngFor="let t of myTasks">
+        <td>{{t.taskName}}</td>
+        <td><input type="checkbox" name="reminder" id="reminder"></td>
+        <td id="actions">
+            <button>Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>

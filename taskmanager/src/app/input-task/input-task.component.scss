@@ -1,0 +1,38 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form button{
+    width: 80px;
+    background-color: cadetblue;
+    margin-bottom: 30px;
+}
+form button:hover{
+    background-color: rgb(53, 105, 107);
+}
+.form-group{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.form-group label{
+    font-size: 20px;
+    font-weight: 600;
+}
+.form-group input{
+    width: 450px;
+    padding: 10px;
+}
+table{
+    text-align: center;
+}
+#actions button{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: cadetblue;
+    color: white;
+}
+#actions button:hover{
+    background-color: rgb(53, 105, 107);
+}
